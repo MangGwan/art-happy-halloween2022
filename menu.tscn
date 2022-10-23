@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://Code/Control.gd" type="Script" id=1]
 [ext_resource path="res://DanimalsCondense.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://viewbuttonpress.png" type="Texture" id=3]
-[ext_resource path="res://viewbutton.png" type="Texture" id=4]
+[ext_resource path="res://StaticArt/viewbuttonpress.png" type="Texture" id=3]
+[ext_resource path="res://StaticArt/viewbutton.png" type="Texture" id=4]
 [ext_resource path="res://Anims/overlay_001.png" type="Texture" id=5]
 [ext_resource path="res://Anims/overlay_002.png" type="Texture" id=6]
 
