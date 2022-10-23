@@ -1,0 +1,2568 @@
+[gd_scene load_steps=440 format=2]
+
+[ext_resource path="res://dragworld.gd" type="Script" id=1]
+[ext_resource path="res://blacklight.png" type="Texture" id=2]
+[ext_resource path="res://partydoor.png" type="Texture" id=3]
+[ext_resource path="res://orangeroomfront.png" type="Texture" id=4]
+[ext_resource path="res://party.png" type="Texture" id=5]
+[ext_resource path="res://purpledoorclosed.png" type="Texture" id=6]
+[ext_resource path="res://purplenotchback.png" type="Texture" id=7]
+[ext_resource path="res://purpleroomback.png" type="Texture" id=8]
+[ext_resource path="res://purpledoor.png" type="Texture" id=9]
+[ext_resource path="res://partyback.png" type="Texture" id=10]
+[ext_resource path="res://purpleroomfront.png" type="Texture" id=11]
+[ext_resource path="res://halldoorgreen.png" type="Texture" id=12]
+[ext_resource path="res://orangedoor.png" type="Texture" id=13]
+[ext_resource path="res://orangeroomback.png" type="Texture" id=14]
+[ext_resource path="res://greennotchback.png" type="Texture" id=15]
+[ext_resource path="res://greenroomfront.png" type="Texture" id=16]
+[ext_resource path="res://halldoororange.png" type="Texture" id=17]
+[ext_resource path="res://hallfront.png" type="Texture" id=18]
+[ext_resource path="res://greendoor.png" type="Texture" id=19]
+[ext_resource path="res://hall.png" type="Texture" id=20]
+[ext_resource path="res://halldoorclosed.png" type="Texture" id=21]
+[ext_resource path="res://blacklightnotch.png" type="Texture" id=22]
+[ext_resource path="res://hallnotchgreen.png" type="Texture" id=23]
+[ext_resource path="res://greenroomback.png" type="Texture" id=24]
+[ext_resource path="res://Anims/Hall_0023.png" type="Texture" id=25]
+[ext_resource path="res://hallnotchorange.png" type="Texture" id=26]
+[ext_resource path="res://orangenotchback.png" type="Texture" id=27]
+[ext_resource path="res://hallnotchpurple.png" type="Texture" id=28]
+[ext_resource path="res://hallnotchpurpleselect.png" type="Texture" id=29]
+[ext_resource path="res://hallnotchorangeselect.png" type="Texture" id=30]
+[ext_resource path="res://orangenotchbackselect.png" type="Texture" id=31]
+[ext_resource path="res://hallnotchgreenselect.png" type="Texture" id=32]
+[ext_resource path="res://greennotchbackselect.png" type="Texture" id=33]
+[ext_resource path="res://purplenotchbackselect.png" type="Texture" id=34]
+[ext_resource path="res://partydoorselect.png" type="Texture" id=35]
+[ext_resource path="res://hallfrontselect.png" type="Texture" id=36]
+[ext_resource path="res://halldoorgreenselect.png" type="Texture" id=37]
+[ext_resource path="res://halldoororangeselect.png" type="Texture" id=38]
+[ext_resource path="res://halldoorclosedselect.png" type="Texture" id=39]
+[ext_resource path="res://blacklightnotchselect.png" type="Texture" id=40]
+[ext_resource path="res://Anims/DClass_0005.png" type="Texture" id=41]
+[ext_resource path="res://purpledoorclosedselect.png" type="Texture" id=42]
+[ext_resource path="res://purpledoorselect.png" type="Texture" id=43]
+[ext_resource path="res://greendoorselect.png" type="Texture" id=44]
+[ext_resource path="res://orangedoorselect.png" type="Texture" id=45]
+[ext_resource path="res://draggablecamera.gd" type="Script" id=46]
+[ext_resource path="res://Anims/AlexThorley_0005.png" type="Texture" id=47]
+[ext_resource path="res://Anims/AlexThorley_0009.png" type="Texture" id=48]
+[ext_resource path="res://Anims/AlexThorley_0011.png" type="Texture" id=49]
+[ext_resource path="res://Anims/AlexThorley_0003.png" type="Texture" id=50]
+[ext_resource path="res://Anims/AlexThorley_0014.png" type="Texture" id=51]
+[ext_resource path="res://Anims/AlexThorley_0012.png" type="Texture" id=52]
+[ext_resource path="res://Anims/AlexThorley_0017.png" type="Texture" id=53]
+[ext_resource path="res://Anims/AlexThorley_0021.png" type="Texture" id=54]
+[ext_resource path="res://Anims/AlexThorley_0006.png" type="Texture" id=55]
+[ext_resource path="res://Anims/AlexThorley_0002.png" type="Texture" id=56]
+[ext_resource path="res://Anims/AlexThorley_0016.png" type="Texture" id=57]
+[ext_resource path="res://Anims/AlexThorley_0020.png" type="Texture" id=58]
+[ext_resource path="res://Anims/AlexThorley_0022.png" type="Texture" id=59]
+[ext_resource path="res://Anims/AlexThorley_0010.png" type="Texture" id=60]
+[ext_resource path="res://Anims/AlexThorley_0023.png" type="Texture" id=61]
+[ext_resource path="res://Anims/AlexThorley_0008.png" type="Texture" id=62]
+[ext_resource path="res://Anims/AlexThorley_0015.png" type="Texture" id=63]
+[ext_resource path="res://Anims/AlexThorley_0000.png" type="Texture" id=64]
+[ext_resource path="res://Anims/AlexThorley_0001.png" type="Texture" id=65]
+[ext_resource path="res://Anims/AlexThorley_0013.png" type="Texture" id=66]
+[ext_resource path="res://Anims/AlexThorley_0018.png" type="Texture" id=67]
+[ext_resource path="res://Anims/AlexThorley_0019.png" type="Texture" id=68]
+[ext_resource path="res://Anims/AlexThorley_0007.png" type="Texture" id=69]
+[ext_resource path="res://Anims/AlexThorley_0004.png" type="Texture" id=70]
+[ext_resource path="res://box.png" type="Texture" id=71]
+[ext_resource path="res://Dialogue.tscn" type="PackedScene" id=72]
+[ext_resource path="res://Room.gd" type="Script" id=73]
+[ext_resource path="res://Anims/Hall_0012.png" type="Texture" id=74]
+[ext_resource path="res://Anims/Hall_0011.png" type="Texture" id=75]
+[ext_resource path="res://Anims/Hall_0018.png" type="Texture" id=76]
+[ext_resource path="res://Anims/Hall_0021.png" type="Texture" id=77]
+[ext_resource path="res://Anims/Hall_0022.png" type="Texture" id=78]
+[ext_resource path="res://Anims/Hall_0014.png" type="Texture" id=79]
+[ext_resource path="res://Anims/Hall_0017.png" type="Texture" id=80]
+[ext_resource path="res://Anims/Hall_0013.png" type="Texture" id=81]
+[ext_resource path="res://Anims/Hall_0019.png" type="Texture" id=82]
+[ext_resource path="res://Anims/Hall_0016.png" type="Texture" id=83]
+[ext_resource path="res://Anims/Hall_0020.png" type="Texture" id=84]
+[ext_resource path="res://Anims/Hall_0015.png" type="Texture" id=85]
+[ext_resource path="res://Anims/Party_0012.png" type="Texture" id=86]
+[ext_resource path="res://Anims/Party_0017.png" type="Texture" id=87]
+[ext_resource path="res://Anims/Party_0018.png" type="Texture" id=88]
+[ext_resource path="res://Anims/Party_0015.png" type="Texture" id=89]
+[ext_resource path="res://Anims/Party_0019.png" type="Texture" id=90]
+[ext_resource path="res://Anims/Party_0020.png" type="Texture" id=91]
+[ext_resource path="res://Anims/Party_0000.png" type="Texture" id=92]
+[ext_resource path="res://Anims/Party_0002.png" type="Texture" id=93]
+[ext_resource path="res://Anims/Party_0005.png" type="Texture" id=94]
+[ext_resource path="res://Anims/Party_0006.png" type="Texture" id=95]
+[ext_resource path="res://Anims/Party_0007.png" type="Texture" id=96]
+[ext_resource path="res://Anims/Party_0008.png" type="Texture" id=97]
+[ext_resource path="res://Anims/Party_0013.png" type="Texture" id=98]
+[ext_resource path="res://Anims/Party_0014.png" type="Texture" id=99]
+[ext_resource path="res://Anims/Party_0001.png" type="Texture" id=100]
+[ext_resource path="res://Anims/Party_0004.png" type="Texture" id=101]
+[ext_resource path="res://Anims/Party_0003.png" type="Texture" id=102]
+[ext_resource path="res://Anims/Party_0009.png" type="Texture" id=103]
+[ext_resource path="res://Anims/Party_0010.png" type="Texture" id=104]
+[ext_resource path="res://Anims/Party_0011.png" type="Texture" id=105]
+[ext_resource path="res://Anims/Party_0016.png" type="Texture" id=106]
+[ext_resource path="res://Anims/Party_0033.png" type="Texture" id=107]
+[ext_resource path="res://Anims/Party_0034.png" type="Texture" id=108]
+[ext_resource path="res://Anims/Party_0035.png" type="Texture" id=109]
+[ext_resource path="res://Anims/Party_0025.png" type="Texture" id=110]
+[ext_resource path="res://Anims/Party_0026.png" type="Texture" id=111]
+[ext_resource path="res://Anims/Party_0021.png" type="Texture" id=112]
+[ext_resource path="res://Anims/Party_0028.png" type="Texture" id=113]
+[ext_resource path="res://Anims/Party_0031.png" type="Texture" id=114]
+[ext_resource path="res://Anims/Party_0029.png" type="Texture" id=115]
+[ext_resource path="res://Anims/Party_0036.png" type="Texture" id=116]
+[ext_resource path="res://Anims/Party_0027.png" type="Texture" id=117]
+[ext_resource path="res://Anims/Party_0032.png" type="Texture" id=118]
+[ext_resource path="res://Anims/Party_0037.png" type="Texture" id=119]
+[ext_resource path="res://Anims/Party_0023.png" type="Texture" id=120]
+[ext_resource path="res://Anims/Party_0022.png" type="Texture" id=121]
+[ext_resource path="res://Anims/Party_0024.png" type="Texture" id=122]
+[ext_resource path="res://Anims/Party_0030.png" type="Texture" id=123]
+[ext_resource path="res://Anims/Blacklight_0026.png" type="Texture" id=124]
+[ext_resource path="res://Anims/Blacklight_0044.png" type="Texture" id=125]
+[ext_resource path="res://Anims/Blacklight_0025.png" type="Texture" id=126]
+[ext_resource path="res://Anims/Blacklight_0038.png" type="Texture" id=127]
+[ext_resource path="res://Anims/Blacklight_0029.png" type="Texture" id=128]
+[ext_resource path="res://Anims/Blacklight_0046.png" type="Texture" id=129]
+[ext_resource path="res://Anims/Hall_0004.png" type="Texture" id=130]
+[ext_resource path="res://Anims/Blacklight_0037.png" type="Texture" id=131]
+[ext_resource path="res://Anims/Hall_0005.png" type="Texture" id=132]
+[ext_resource path="res://Anims/Blacklight_0024.png" type="Texture" id=133]
+[ext_resource path="res://Anims/Hall_0002.png" type="Texture" id=134]
+[ext_resource path="res://Anims/Blacklight_0042.png" type="Texture" id=135]
+[ext_resource path="res://Anims/Hall_0006.png" type="Texture" id=136]
+[ext_resource path="res://Anims/Hall_0008.png" type="Texture" id=137]
+[ext_resource path="res://Anims/Hall_0009.png" type="Texture" id=138]
+[ext_resource path="res://Anims/Hall_0010.png" type="Texture" id=139]
+[ext_resource path="res://Anims/Hall_0003.png" type="Texture" id=140]
+[ext_resource path="res://Anims/Blacklight_0028.png" type="Texture" id=141]
+[ext_resource path="res://Anims/Blacklight_0040.png" type="Texture" id=142]
+[ext_resource path="res://Anims/Blacklight_0036.png" type="Texture" id=143]
+[ext_resource path="res://Anims/Blacklight_0047.png" type="Texture" id=144]
+[ext_resource path="res://Anims/Hall_0007.png" type="Texture" id=145]
+[ext_resource path="res://Anims/Blacklight_0027.png" type="Texture" id=146]
+[ext_resource path="res://Anims/Hall_0000.png" type="Texture" id=147]
+[ext_resource path="res://Anims/Blacklight_0030.png" type="Texture" id=148]
+[ext_resource path="res://Anims/Blacklight_0032.png" type="Texture" id=149]
+[ext_resource path="res://Anims/Blacklight_0043.png" type="Texture" id=150]
+[ext_resource path="res://Anims/Hall_0001.png" type="Texture" id=151]
+[ext_resource path="res://Anims/Blacklight_0035.png" type="Texture" id=152]
+[ext_resource path="res://Anims/Blacklight_0033.png" type="Texture" id=153]
+[ext_resource path="res://Anims/Blacklight_0045.png" type="Texture" id=154]
+[ext_resource path="res://Anims/Blacklight_0041.png" type="Texture" id=155]
+[ext_resource path="res://Anims/Blacklight_0031.png" type="Texture" id=156]
+[ext_resource path="res://Anims/Blacklight_0039.png" type="Texture" id=157]
+[ext_resource path="res://Anims/Blacklight_0034.png" type="Texture" id=158]
+[ext_resource path="res://Anims/Blacklight_0013.png" type="Texture" id=159]
+[ext_resource path="res://Anims/Party_0043.png" type="Texture" id=160]
+[ext_resource path="res://Anims/Blacklight_0008.png" type="Texture" id=161]
+[ext_resource path="res://Anims/Party_0045.png" type="Texture" id=162]
+[ext_resource path="res://Anims/Blacklight_0007.png" type="Texture" id=163]
+[ext_resource path="res://Anims/Party_0047.png" type="Texture" id=164]
+[ext_resource path="res://Anims/Party_0038.png" type="Texture" id=165]
+[ext_resource path="res://Anims/Party_0041.png" type="Texture" id=166]
+[ext_resource path="res://Anims/Party_0044.png" type="Texture" id=167]
+[ext_resource path="res://Anims/Blacklight_0009.png" type="Texture" id=168]
+[ext_resource path="res://Anims/Blacklight_0014.png" type="Texture" id=169]
+[ext_resource path="res://Anims/Blacklight_0015.png" type="Texture" id=170]
+[ext_resource path="res://Anims/Blacklight_0018.png" type="Texture" id=171]
+[ext_resource path="res://Anims/Blacklight_0019.png" type="Texture" id=172]
+[ext_resource path="res://Anims/Blacklight_0021.png" type="Texture" id=173]
+[ext_resource path="res://Anims/Blacklight_0010.png" type="Texture" id=174]
+[ext_resource path="res://Anims/Party_0040.png" type="Texture" id=175]
+[ext_resource path="res://Anims/Blacklight_0003.png" type="Texture" id=176]
+[ext_resource path="res://Anims/Blacklight_0017.png" type="Texture" id=177]
+[ext_resource path="res://Anims/Blacklight_0022.png" type="Texture" id=178]
+[ext_resource path="res://Anims/Blacklight_0023.png" type="Texture" id=179]
+[ext_resource path="res://Anims/Party_0042.png" type="Texture" id=180]
+[ext_resource path="res://Anims/Blacklight_0001.png" type="Texture" id=181]
+[ext_resource path="res://Anims/Blacklight_0004.png" type="Texture" id=182]
+[ext_resource path="res://Anims/Party_0039.png" type="Texture" id=183]
+[ext_resource path="res://Anims/Blacklight_0005.png" type="Texture" id=184]
+[ext_resource path="res://Anims/Blacklight_0011.png" type="Texture" id=185]
+[ext_resource path="res://Anims/Blacklight_0000.png" type="Texture" id=186]
+[ext_resource path="res://Anims/Blacklight_0002.png" type="Texture" id=187]
+[ext_resource path="res://Anims/Party_0046.png" type="Texture" id=188]
+[ext_resource path="res://Anims/Blacklight_0012.png" type="Texture" id=189]
+[ext_resource path="res://Anims/Blacklight_0016.png" type="Texture" id=190]
+[ext_resource path="res://Anims/Blacklight_0006.png" type="Texture" id=191]
+[ext_resource path="res://Anims/Blacklight_0020.png" type="Texture" id=192]
+[ext_resource path="res://Anims/DClass_0000.png" type="Texture" id=193]
+[ext_resource path="res://Anims/DClass_0012.png" type="Texture" id=194]
+[ext_resource path="res://Anims/DClass_0018.png" type="Texture" id=195]
+[ext_resource path="res://Anims/IrizuAndAriel_0004.png" type="Texture" id=196]
+[ext_resource path="res://Anims/IrizuAndAriel_0020.png" type="Texture" id=197]
+[ext_resource path="res://Anims/IrizuAndAriel_0022.png" type="Texture" id=198]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0000.png" type="Texture" id=199]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0001.png" type="Texture" id=200]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0002.png" type="Texture" id=201]
+[ext_resource path="res://Anims/DClass_0010.png" type="Texture" id=202]
+[ext_resource path="res://Anims/DClass_0011.png" type="Texture" id=203]
+[ext_resource path="res://Anims/DClass_0022.png" type="Texture" id=204]
+[ext_resource path="res://Anims/DClass_0023.png" type="Texture" id=205]
+[ext_resource path="res://Anims/IrizuAndAriel_0009.png" type="Texture" id=206]
+[ext_resource path="res://Anims/IrizuAndAriel_0010.png" type="Texture" id=207]
+[ext_resource path="res://Anims/IrizuAndAriel_0011.png" type="Texture" id=208]
+[ext_resource path="res://Anims/IrizuAndAriel_0012.png" type="Texture" id=209]
+[ext_resource path="res://Anims/DClass_0001.png" type="Texture" id=210]
+[ext_resource path="res://Anims/DClass_0006.png" type="Texture" id=211]
+[ext_resource path="res://Anims/DClass_0019.png" type="Texture" id=212]
+[ext_resource path="res://Anims/IrizuAndAriel_0013.png" type="Texture" id=213]
+[ext_resource path="res://Anims/IrizuAndAriel_0014.png" type="Texture" id=214]
+[ext_resource path="res://Anims/DClass_0020.png" type="Texture" id=215]
+[ext_resource path="res://Anims/DClass_0015.png" type="Texture" id=216]
+[ext_resource path="res://Anims/DClass_0013.png" type="Texture" id=217]
+[ext_resource path="res://Anims/DClass_0002.png" type="Texture" id=218]
+[ext_resource path="res://Anims/DClass_0016.png" type="Texture" id=219]
+[ext_resource path="res://Anims/IrizuAndAriel_0000.png" type="Texture" id=220]
+[ext_resource path="res://Anims/DClass_0021.png" type="Texture" id=221]
+[ext_resource path="res://Anims/IrizuAndAriel_0002.png" type="Texture" id=222]
+[ext_resource path="res://Anims/IrizuAndAriel_0003.png" type="Texture" id=223]
+[ext_resource path="res://Anims/IrizuAndAriel_0006.png" type="Texture" id=224]
+[ext_resource path="res://Anims/IrizuAndAriel_0001.png" type="Texture" id=225]
+[ext_resource path="res://Anims/DClass_0004.png" type="Texture" id=226]
+[ext_resource path="res://Anims/IrizuAndAriel_0007.png" type="Texture" id=227]
+[ext_resource path="res://Anims/IrizuAndAriel_0015.png" type="Texture" id=228]
+[ext_resource path="res://Anims/DClass_0003.png" type="Texture" id=229]
+[ext_resource path="res://Anims/IrizuAndAriel_0005.png" type="Texture" id=230]
+[ext_resource path="res://Anims/IrizuAndAriel_0016.png" type="Texture" id=231]
+[ext_resource path="res://Anims/IrizuAndAriel_0017.png" type="Texture" id=232]
+[ext_resource path="res://Anims/IrizuAndAriel_0018.png" type="Texture" id=233]
+[ext_resource path="res://Anims/IrizuAndAriel_0019.png" type="Texture" id=234]
+[ext_resource path="res://Anims/DClass_0008.png" type="Texture" id=235]
+[ext_resource path="res://Anims/DClass_0014.png" type="Texture" id=236]
+[ext_resource path="res://Anims/IrizuAndAriel_0021.png" type="Texture" id=237]
+[ext_resource path="res://Anims/DClass_0007.png" type="Texture" id=238]
+[ext_resource path="res://Anims/IrizuAndAriel_0023.png" type="Texture" id=239]
+[ext_resource path="res://Anims/DClass_0009.png" type="Texture" id=240]
+[ext_resource path="res://Anims/DClass_0017.png" type="Texture" id=241]
+[ext_resource path="res://Anims/IrizuAndAriel_0008.png" type="Texture" id=242]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0006.png" type="Texture" id=243]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0007.png" type="Texture" id=244]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0008.png" type="Texture" id=245]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0003.png" type="Texture" id=246]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0005.png" type="Texture" id=247]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0004.png" type="Texture" id=248]
+[ext_resource path="res://Anims/PrimAndInes_0019.png" type="Texture" id=249]
+[ext_resource path="res://Anims/PrimAndInes_0008.png" type="Texture" id=250]
+[ext_resource path="res://Anims/PrimAndInes_0012.png" type="Texture" id=251]
+[ext_resource path="res://Anims/PrimAndInes_0007.png" type="Texture" id=252]
+[ext_resource path="res://Anims/PrimAndInes_0011.png" type="Texture" id=253]
+[ext_resource path="res://Anims/PrimAndInes_0023.png" type="Texture" id=254]
+[ext_resource path="res://Anims/PrimAndInes_0018.png" type="Texture" id=255]
+[ext_resource path="res://Anims/PrimAndInes_0009.png" type="Texture" id=256]
+[ext_resource path="res://Anims/PrimAndInes_0022.png" type="Texture" id=257]
+[ext_resource path="res://Anims/PrimAndInes_0020.png" type="Texture" id=258]
+[ext_resource path="res://Anims/PrimAndInes_0013.png" type="Texture" id=259]
+[ext_resource path="res://Anims/PrimAndInes_0010.png" type="Texture" id=260]
+[ext_resource path="res://Anims/PrimAndInes_0021.png" type="Texture" id=261]
+[ext_resource path="res://Anims/PrimAndInes_0014.png" type="Texture" id=262]
+[ext_resource path="res://Anims/PrimAndInes_0016.png" type="Texture" id=263]
+[ext_resource path="res://Anims/PrimAndInes_0017.png" type="Texture" id=264]
+[ext_resource path="res://Anims/PrimAndInes_0015.png" type="Texture" id=265]
+[ext_resource path="res://Anims/TylerUmen_0006.png" type="Texture" id=266]
+[ext_resource path="res://Anims/BasarAndSnap_0019.png" type="Texture" id=267]
+[ext_resource path="res://Anims/TylerUmen_0014.png" type="Texture" id=268]
+[ext_resource path="res://Anims/TylerUmen_0015.png" type="Texture" id=269]
+[ext_resource path="res://Anims/TylerUmen_0016.png" type="Texture" id=270]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0017.png" type="Texture" id=271]
+[ext_resource path="res://Anims/BasarAndSnap_0008.png" type="Texture" id=272]
+[ext_resource path="res://Anims/TylerUmen_0017.png" type="Texture" id=273]
+[ext_resource path="res://Anims/TylerUmen_0018.png" type="Texture" id=274]
+[ext_resource path="res://Anims/TylerUmen_0020.png" type="Texture" id=275]
+[ext_resource path="res://Anims/TylerUmen_0004.png" type="Texture" id=276]
+[ext_resource path="res://Anims/TylerUmen_0021.png" type="Texture" id=277]
+[ext_resource path="res://Anims/TylerUmen_0009.png" type="Texture" id=278]
+[ext_resource path="res://Anims/BasarAndSnap_0010.png" type="Texture" id=279]
+[ext_resource path="res://Anims/TylerUmen_0019.png" type="Texture" id=280]
+[ext_resource path="res://Anims/BasarAndSnap_0003.png" type="Texture" id=281]
+[ext_resource path="res://Anims/TylerUmen_0022.png" type="Texture" id=282]
+[ext_resource path="res://Anims/TylerUmen_0023.png" type="Texture" id=283]
+[ext_resource path="res://Anims/PrimAndInes_0000.png" type="Texture" id=284]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0010.png" type="Texture" id=285]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0015.png" type="Texture" id=286]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0021.png" type="Texture" id=287]
+[ext_resource path="res://Anims/BasarAndSnap_0005.png" type="Texture" id=288]
+[ext_resource path="res://Anims/BasarAndSnap_0007.png" type="Texture" id=289]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0018.png" type="Texture" id=290]
+[ext_resource path="res://Anims/BasarAndSnap_0014.png" type="Texture" id=291]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0016.png" type="Texture" id=292]
+[ext_resource path="res://Anims/BasarAndSnap_0015.png" type="Texture" id=293]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0013.png" type="Texture" id=294]
+[ext_resource path="res://Anims/BasarAndSnap_0018.png" type="Texture" id=295]
+[ext_resource path="res://Anims/TylerUmen_0001.png" type="Texture" id=296]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0014.png" type="Texture" id=297]
+[ext_resource path="res://Anims/TylerUmen_0005.png" type="Texture" id=298]
+[ext_resource path="res://Anims/TylerUmen_0002.png" type="Texture" id=299]
+[ext_resource path="res://Anims/BasarAndSnap_0000.png" type="Texture" id=300]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0011.png" type="Texture" id=301]
+[ext_resource path="res://Anims/TylerUmen_0007.png" type="Texture" id=302]
+[ext_resource path="res://Anims/TylerUmen_0008.png" type="Texture" id=303]
+[ext_resource path="res://Anims/BasarAndSnap_0011.png" type="Texture" id=304]
+[ext_resource path="res://Anims/BasarAndSnap_0013.png" type="Texture" id=305]
+[ext_resource path="res://Anims/TylerUmen_0011.png" type="Texture" id=306]
+[ext_resource path="res://Anims/TylerUmen_0012.png" type="Texture" id=307]
+[ext_resource path="res://Anims/BasarAndSnap_0012.png" type="Texture" id=308]
+[ext_resource path="res://Anims/BasarAndSnap_0006.png" type="Texture" id=309]
+[ext_resource path="res://Anims/BasarAndSnap_0020.png" type="Texture" id=310]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0009.png" type="Texture" id=311]
+[ext_resource path="res://Anims/BasarAndSnap_0001.png" type="Texture" id=312]
+[ext_resource path="res://Anims/BasarAndSnap_0009.png" type="Texture" id=313]
+[ext_resource path="res://Anims/TylerUmen_0000.png" type="Texture" id=314]
+[ext_resource path="res://Anims/TylerUmen_0003.png" type="Texture" id=315]
+[ext_resource path="res://Anims/BasarAndSnap_0016.png" type="Texture" id=316]
+[ext_resource path="res://Anims/BasarAndSnap_0023.png" type="Texture" id=317]
+[ext_resource path="res://Anims/TylerUmen_0013.png" type="Texture" id=318]
+[ext_resource path="res://Anims/BasarAndSnap_0017.png" type="Texture" id=319]
+[ext_resource path="res://Anims/TylerUmen_0010.png" type="Texture" id=320]
+[ext_resource path="res://Anims/BasarAndSnap_0022.png" type="Texture" id=321]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0023.png" type="Texture" id=322]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0020.png" type="Texture" id=323]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0012.png" type="Texture" id=324]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0022.png" type="Texture" id=325]
+[ext_resource path="res://Anims/ShermAsteriaAndCerise_0019.png" type="Texture" id=326]
+[ext_resource path="res://Anims/BasarAndSnap_0004.png" type="Texture" id=327]
+[ext_resource path="res://Anims/BasarAndSnap_0021.png" type="Texture" id=328]
+[ext_resource path="res://Anims/BasarAndSnap_0002.png" type="Texture" id=329]
+[ext_resource path="res://Anims/PrimAndInes_0004.png" type="Texture" id=330]
+[ext_resource path="res://Anims/PrimAndInes_0003.png" type="Texture" id=331]
+[ext_resource path="res://Anims/PrimAndInes_0002.png" type="Texture" id=332]
+[ext_resource path="res://Anims/PrimAndInes_0006.png" type="Texture" id=333]
+[ext_resource path="res://Anims/PrimAndInes_0001.png" type="Texture" id=334]
+[ext_resource path="res://Anims/PrimAndInes_0005.png" type="Texture" id=335]
+[ext_resource path="res://Anims/JackAnd2192_0003.png" type="Texture" id=336]
+[ext_resource path="res://Anims/JackAnd2192_0013.png" type="Texture" id=337]
+[ext_resource path="res://Anims/LucreciaAndFern_0002.png" type="Texture" id=338]
+[ext_resource path="res://Anims/LucreciaAndFern_0009.png" type="Texture" id=339]
+[ext_resource path="res://Anims/JackAnd2192_0010.png" type="Texture" id=340]
+[ext_resource path="res://Anims/JackAnd2192_0019.png" type="Texture" id=341]
+[ext_resource path="res://Anims/LucreciaAndFern_0012.png" type="Texture" id=342]
+[ext_resource path="res://Anims/JackAnd2192_0008.png" type="Texture" id=343]
+[ext_resource path="res://Anims/LucreciaAndFern_0014.png" type="Texture" id=344]
+[ext_resource path="res://Anims/JackAnd2192_0002.png" type="Texture" id=345]
+[ext_resource path="res://Anims/JackAnd2192_0016.png" type="Texture" id=346]
+[ext_resource path="res://Anims/JackAnd2192_0011.png" type="Texture" id=347]
+[ext_resource path="res://Anims/JackAnd2192_0009.png" type="Texture" id=348]
+[ext_resource path="res://Anims/JackAnd2192_0014.png" type="Texture" id=349]
+[ext_resource path="res://Anims/JackAnd2192_0020.png" type="Texture" id=350]
+[ext_resource path="res://Anims/JackAnd2192_0023.png" type="Texture" id=351]
+[ext_resource path="res://Anims/LucreciaAndFern_0000.png" type="Texture" id=352]
+[ext_resource path="res://Anims/LucreciaAndFern_0001.png" type="Texture" id=353]
+[ext_resource path="res://Anims/LucreciaAndFern_0006.png" type="Texture" id=354]
+[ext_resource path="res://Anims/JackAnd2192_0001.png" type="Texture" id=355]
+[ext_resource path="res://Anims/LucreciaAndFern_0007.png" type="Texture" id=356]
+[ext_resource path="res://Anims/LucreciaAndFern_0008.png" type="Texture" id=357]
+[ext_resource path="res://Anims/LucreciaAndFern_0010.png" type="Texture" id=358]
+[ext_resource path="res://Anims/LucreciaAndFern_0011.png" type="Texture" id=359]
+[ext_resource path="res://Anims/LucreciaAndFern_0013.png" type="Texture" id=360]
+[ext_resource path="res://Anims/LucreciaAndFern_0015.png" type="Texture" id=361]
+[ext_resource path="res://Anims/LucreciaAndFern_0005.png" type="Texture" id=362]
+[ext_resource path="res://Anims/JackAnd2192_0006.png" type="Texture" id=363]
+[ext_resource path="res://Anims/JackAnd2192_0012.png" type="Texture" id=364]
+[ext_resource path="res://Anims/LucreciaAndFern_0004.png" type="Texture" id=365]
+[ext_resource path="res://Anims/LucreciaAndFern_0017.png" type="Texture" id=366]
+[ext_resource path="res://Anims/JackAnd2192_0018.png" type="Texture" id=367]
+[ext_resource path="res://Anims/JackAnd2192_0000.png" type="Texture" id=368]
+[ext_resource path="res://Anims/LucreciaAndFern_0018.png" type="Texture" id=369]
+[ext_resource path="res://Anims/LucreciaAndFern_0019.png" type="Texture" id=370]
+[ext_resource path="res://Anims/JackAnd2192_0005.png" type="Texture" id=371]
+[ext_resource path="res://Anims/LucreciaAndFern_0020.png" type="Texture" id=372]
+[ext_resource path="res://Anims/JackAnd2192_0004.png" type="Texture" id=373]
+[ext_resource path="res://Anims/JackAnd2192_0022.png" type="Texture" id=374]
+[ext_resource path="res://Anims/LucreciaAndFern_0021.png" type="Texture" id=375]
+[ext_resource path="res://Anims/LucreciaAndFern_0003.png" type="Texture" id=376]
+[ext_resource path="res://Anims/JackAnd2192_0015.png" type="Texture" id=377]
+[ext_resource path="res://Anims/JackAnd2192_0021.png" type="Texture" id=378]
+[ext_resource path="res://Anims/LucreciaAndFern_0022.png" type="Texture" id=379]
+[ext_resource path="res://Anims/LucreciaAndFern_0016.png" type="Texture" id=380]
+[ext_resource path="res://Anims/JackAnd2192_0007.png" type="Texture" id=381]
+[ext_resource path="res://Anims/JackAnd2192_0017.png" type="Texture" id=382]
+[ext_resource path="res://Anims/053682And999_0001.png" type="Texture" id=383]
+[ext_resource path="res://Anims/053682And999_0000.png" type="Texture" id=384]
+[ext_resource path="res://Anims/053682And999_0002.png" type="Texture" id=385]
+[ext_resource path="res://Anims/053682And999_0004.png" type="Texture" id=386]
+[ext_resource path="res://Anims/LucreciaAndFern_0023.png" type="Texture" id=387]
+[ext_resource path="res://Anims/053682And999_0003.png" type="Texture" id=388]
+[ext_resource path="res://Anims/053682And999_0019.png" type="Texture" id=389]
+[ext_resource path="res://Anims/053682And999_0006.png" type="Texture" id=390]
+[ext_resource path="res://Anims/053682And999_0020.png" type="Texture" id=391]
+[ext_resource path="res://Anims/053682And999_0009.png" type="Texture" id=392]
+[ext_resource path="res://Anims/053682And999_0012.png" type="Texture" id=393]
+[ext_resource path="res://Anims/053682And999_0023.png" type="Texture" id=394]
+[ext_resource path="res://Anims/053682And999_0011.png" type="Texture" id=395]
+[ext_resource path="res://Anims/053682And999_0014.png" type="Texture" id=396]
+[ext_resource path="res://Anims/053682And999_0022.png" type="Texture" id=397]
+[ext_resource path="res://Anims/053682And999_0016.png" type="Texture" id=398]
+[ext_resource path="res://Anims/053682And999_0021.png" type="Texture" id=399]
+[ext_resource path="res://Anims/053682And999_0010.png" type="Texture" id=400]
+[ext_resource path="res://Anims/053682And999_0015.png" type="Texture" id=401]
+[ext_resource path="res://Anims/053682And999_0005.png" type="Texture" id=402]
+[ext_resource path="res://Anims/053682And999_0008.png" type="Texture" id=403]
+[ext_resource path="res://Anims/053682And999_0017.png" type="Texture" id=404]
+[ext_resource path="res://Anims/053682And999_0013.png" type="Texture" id=405]
+[ext_resource path="res://Anims/053682And999_0007.png" type="Texture" id=406]
+[ext_resource path="res://Anims/053682And999_0018.png" type="Texture" id=407]
+[ext_resource path="res://DanimalsCondense.ttf" type="DynamicFontData" id=408]
+[ext_resource path="res://Anims/overlay_001.png" type="Texture" id=409]
+[ext_resource path="res://Anims/overlay_002.png" type="Texture" id=410]
+
+[sub_resource type="SpriteFrames" id=20]
+animations = [ {
+"frames": [ ExtResource( 314 ), ExtResource( 296 ), ExtResource( 299 ), ExtResource( 315 ), ExtResource( 276 ), ExtResource( 298 ), ExtResource( 266 ), ExtResource( 302 ), ExtResource( 303 ), ExtResource( 278 ), ExtResource( 320 ), ExtResource( 306 ), ExtResource( 307 ), ExtResource( 318 ), ExtResource( 268 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 280 ), ExtResource( 275 ), ExtResource( 277 ), ExtResource( 282 ), ExtResource( 283 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=21]
+animations = [ {
+"frames": [ ExtResource( 284 ), ExtResource( 334 ), ExtResource( 332 ), ExtResource( 331 ), ExtResource( 330 ), ExtResource( 335 ), ExtResource( 333 ), ExtResource( 252 ), ExtResource( 250 ), ExtResource( 256 ), ExtResource( 260 ), ExtResource( 253 ), ExtResource( 251 ), ExtResource( 259 ), ExtResource( 262 ), ExtResource( 265 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 255 ), ExtResource( 249 ), ExtResource( 258 ), ExtResource( 261 ), ExtResource( 257 ), ExtResource( 254 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ ExtResource( 368 ), ExtResource( 355 ), ExtResource( 345 ), ExtResource( 336 ), ExtResource( 373 ), ExtResource( 371 ), ExtResource( 363 ), ExtResource( 381 ), ExtResource( 343 ), ExtResource( 348 ), ExtResource( 340 ), ExtResource( 347 ), ExtResource( 364 ), ExtResource( 337 ), ExtResource( 349 ), ExtResource( 377 ), ExtResource( 346 ), ExtResource( 382 ), ExtResource( 367 ), ExtResource( 341 ), ExtResource( 350 ), ExtResource( 378 ), ExtResource( 374 ), ExtResource( 351 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=27]
+animations = [ {
+"frames": [ ExtResource( 352 ), ExtResource( 353 ), ExtResource( 338 ), ExtResource( 376 ), ExtResource( 365 ), ExtResource( 362 ), ExtResource( 354 ), ExtResource( 356 ), ExtResource( 357 ), ExtResource( 339 ), ExtResource( 358 ), ExtResource( 359 ), ExtResource( 342 ), ExtResource( 360 ), ExtResource( 344 ), ExtResource( 361 ), ExtResource( 380 ), ExtResource( 366 ), ExtResource( 369 ), ExtResource( 370 ), ExtResource( 372 ), ExtResource( 375 ), ExtResource( 379 ), ExtResource( 387 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=28]
+animations = [ {
+"frames": [ ExtResource( 384 ), ExtResource( 383 ), ExtResource( 385 ), ExtResource( 388 ), ExtResource( 386 ), ExtResource( 402 ), ExtResource( 390 ), ExtResource( 406 ), ExtResource( 403 ), ExtResource( 392 ), ExtResource( 400 ), ExtResource( 395 ), ExtResource( 393 ), ExtResource( 405 ), ExtResource( 396 ), ExtResource( 401 ), ExtResource( 398 ), ExtResource( 404 ), ExtResource( 407 ), ExtResource( 389 ), ExtResource( 391 ), ExtResource( 399 ), ExtResource( 397 ), ExtResource( 394 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [ ExtResource( 147 ), ExtResource( 151 ), ExtResource( 134 ), ExtResource( 140 ), ExtResource( 130 ), ExtResource( 132 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 75 ), ExtResource( 74 ), ExtResource( 81 ), ExtResource( 79 ), ExtResource( 85 ), ExtResource( 83 ), ExtResource( 80 ), ExtResource( 76 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=23]
+animations = [ {
+"frames": [ ExtResource( 193 ), ExtResource( 210 ), ExtResource( 218 ), ExtResource( 229 ), ExtResource( 226 ), ExtResource( 41 ), ExtResource( 211 ), ExtResource( 238 ), ExtResource( 235 ), ExtResource( 240 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 194 ), ExtResource( 217 ), ExtResource( 236 ), ExtResource( 216 ), ExtResource( 219 ), ExtResource( 241 ), ExtResource( 195 ), ExtResource( 212 ), ExtResource( 215 ), ExtResource( 221 ), ExtResource( 204 ), ExtResource( 205 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=24]
+animations = [ {
+"frames": [ ExtResource( 220 ), ExtResource( 225 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 196 ), ExtResource( 230 ), ExtResource( 224 ), ExtResource( 227 ), ExtResource( 242 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 228 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 197 ), ExtResource( 237 ), ExtResource( 198 ), ExtResource( 239 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=25]
+animations = [ {
+"frames": [ ExtResource( 199 ), ExtResource( 200 ), ExtResource( 201 ), ExtResource( 246 ), ExtResource( 248 ), ExtResource( 247 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 311 ), ExtResource( 285 ), ExtResource( 301 ), ExtResource( 324 ), ExtResource( 294 ), ExtResource( 297 ), ExtResource( 286 ), ExtResource( 292 ), ExtResource( 271 ), ExtResource( 290 ), ExtResource( 326 ), ExtResource( 323 ), ExtResource( 287 ), ExtResource( 325 ), ExtResource( 322 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=26]
+animations = [ {
+"frames": [ ExtResource( 300 ), ExtResource( 312 ), ExtResource( 329 ), ExtResource( 281 ), ExtResource( 327 ), ExtResource( 288 ), ExtResource( 309 ), ExtResource( 289 ), ExtResource( 272 ), ExtResource( 313 ), ExtResource( 279 ), ExtResource( 304 ), ExtResource( 308 ), ExtResource( 305 ), ExtResource( 291 ), ExtResource( 293 ), ExtResource( 316 ), ExtResource( 319 ), ExtResource( 295 ), ExtResource( 267 ), ExtResource( 310 ), ExtResource( 328 ), ExtResource( 321 ), ExtResource( 317 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ ExtResource( 186 ), ExtResource( 181 ), ExtResource( 187 ), ExtResource( 176 ), ExtResource( 182 ), ExtResource( 184 ), ExtResource( 191 ), ExtResource( 163 ), ExtResource( 161 ), ExtResource( 168 ), ExtResource( 174 ), ExtResource( 185 ), ExtResource( 189 ), ExtResource( 159 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 190 ), ExtResource( 177 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 192 ), ExtResource( 173 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 133 ), ExtResource( 126 ), ExtResource( 124 ), ExtResource( 146 ), ExtResource( 141 ), ExtResource( 128 ), ExtResource( 148 ), ExtResource( 156 ), ExtResource( 149 ), ExtResource( 153 ), ExtResource( 158 ), ExtResource( 152 ), ExtResource( 143 ), ExtResource( 131 ), ExtResource( 127 ), ExtResource( 157 ), ExtResource( 142 ), ExtResource( 155 ), ExtResource( 135 ), ExtResource( 150 ), ExtResource( 125 ), ExtResource( 154 ), ExtResource( 129 ), ExtResource( 144 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=19]
+animations = [ {
+"frames": [ ExtResource( 92 ), ExtResource( 100 ), ExtResource( 93 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 86 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 89 ), ExtResource( 106 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 112 ), ExtResource( 121 ), ExtResource( 120 ), ExtResource( 122 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 117 ), ExtResource( 113 ), ExtResource( 115 ), ExtResource( 123 ), ExtResource( 114 ), ExtResource( 118 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 116 ), ExtResource( 119 ), ExtResource( 165 ), ExtResource( 183 ), ExtResource( 175 ), ExtResource( 166 ), ExtResource( 180 ), ExtResource( 160 ), ExtResource( 167 ), ExtResource( 162 ), ExtResource( 188 ), ExtResource( 164 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 64 ), ExtResource( 65 ), ExtResource( 56 ), ExtResource( 50 ), ExtResource( 70 ), ExtResource( 47 ), ExtResource( 55 ), ExtResource( 69 ), ExtResource( 62 ), ExtResource( 48 ), ExtResource( 60 ), ExtResource( 49 ), ExtResource( 52 ), ExtResource( 66 ), ExtResource( 51 ), ExtResource( 63 ), ExtResource( 57 ), ExtResource( 53 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 58 ), ExtResource( 54 ), ExtResource( 59 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Blacklight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 144 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Blacklight:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Blacklight:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("dragworld/Party:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 144 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("dragworld/Partyback:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 144 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("dragworld/Partyback:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("dragworld/Party:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("dragworld/Partyback:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("dragworld/Party:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("dragworld/Hall:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("dragworld/Hall:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("dragworld/Hall:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 144 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("dragworld/Purpleroomfront2:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("dragworld/Purpleroomfront2:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 59, 210 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("dragworld/Purpleroomfront2:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("dragworld/Greenroomfront:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("dragworld/Greenroomfront:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("dragworld/Greenroomfront:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("dragworld/Orangeroomfront:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("dragworld/Orangeroomfront:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("dragworld/Orangeroomfront:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("dragworld/Purpleroomfront:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("dragworld/Purpleroomfront:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("dragworld/Purpleroomfront:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("dragworld/Greenroomback2:visible")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("dragworld/Greenroomback2:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("dragworld/Greenroomback2:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 59, 204 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("dragworld/Orangeroomback2:visible")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("dragworld/Orangeroomback2:modulate")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("dragworld/Orangeroomback2:position")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 59, 204 ) ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("dragworld/Purpleroomback:visible")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("dragworld/Purpleroomback:modulate")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("dragworld/Purpleroomback:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 144 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("dragworld/Greenroomback:visible")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/34/type = "value"
+tracks/34/path = NodePath("dragworld/Greenroomback:modulate")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("dragworld/Greenroomback:position")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 144 ) ]
+}
+tracks/36/type = "value"
+tracks/36/path = NodePath("dragworld/Orangeroomback:visible")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/37/type = "value"
+tracks/37/path = NodePath("dragworld/Orangeroomback:modulate")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/38/type = "value"
+tracks/38/path = NodePath("dragworld/Orangeroomback:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 179, 144 ) ]
+}
+tracks/39/type = "value"
+tracks/39/path = NodePath("CanvasLayer/ColorRect:modulate")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/40/type = "value"
+tracks/40/path = NodePath("CanvasLayer/ColorRect:visible")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "blacklightload"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Blacklight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.4, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Blacklight:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Blacklight:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "hallload"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Hall:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Hall:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Hall:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 149 ), Vector2( 179, 144 ) ]
+}
+
+[sub_resource type="Animation" id=29]
+resource_name = "loadin"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 2.3, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "partyload"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Partyback:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Party:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Party:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("dragworld/Partyback:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("dragworld/Party:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("dragworld/Partyback:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "room1load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Purpleroomfront2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Purpleroomfront2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 59, 210 ), Vector2( 59, 204 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Purpleroomfront2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "room2load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Greenroomfront:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Greenroomfront:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Greenroomfront:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "room3load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Orangeroomfront:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Orangeroomfront:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Orangeroomfront:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "room4load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Purpleroomfront:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Purpleroomfront:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Purpleroomfront:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "room5load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Greenroomback2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Greenroomback2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Greenroomback2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 59, 210 ), Vector2( 59, 204 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "room6load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Orangeroomback2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Orangeroomback2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Orangeroomback2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 59, 210 ), Vector2( 59, 204 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "room7load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Purpleroomback:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Purpleroomback:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Purpleroomback:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "room8load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Greenroomback:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Greenroomback:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Greenroomback:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "room9load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("dragworld/Orangeroomback:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("dragworld/Orangeroomback:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("dragworld/Orangeroomback:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 179, 150 ), Vector2( 179, 144 ) ]
+}
+
+[sub_resource type="DynamicFont" id=30]
+font_data = ExtResource( 408 )
+
+[sub_resource type="SpriteFrames" id=31]
+animations = [ {
+"frames": [ ExtResource( 409 ), ExtResource( 410 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[node name="world" type="Node2D"]
+script = ExtResource( 73 )
+
+[node name="dragworld" type="Area2D" parent="."]
+position = Vector2( -149, -125 )
+script = ExtResource( 1 )
+
+[node name="Orangeroomback" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 144 )
+texture = ExtResource( 14 )
+
+[node name="OrangeNotch1" type="TextureButton" parent="dragworld/Orangeroomback"]
+margin_left = 14.0
+margin_top = -69.0
+margin_right = 36.0
+margin_bottom = -51.0
+texture_normal = ExtResource( 27 )
+texture_pressed = ExtResource( 31 )
+texture_hover = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Orangeroomback"]
+position = Vector2( -15, -113 )
+frames = SubResource( 20 )
+frame = 1
+playing = true
+centered = false
+
+[node name="Umen" type="TextureButton" parent="dragworld/Orangeroomback"]
+margin_left = -20.0
+margin_top = -118.0
+margin_right = 2.0
+margin_bottom = -93.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Greenroomback" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 144 )
+texture = ExtResource( 24 )
+
+[node name="GreenNotch1" type="TextureButton" parent="dragworld/Greenroomback"]
+margin_left = -26.0
+margin_top = -49.0
+margin_right = -4.0
+margin_bottom = -31.0
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 33 )
+texture_hover = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Greenroomback"]
+position = Vector2( -78, -91 )
+frames = SubResource( 21 )
+frame = 14
+playing = true
+centered = false
+
+[node name="Ines" type="TextureButton" parent="dragworld/Greenroomback"]
+margin_left = -80.0
+margin_top = -96.0
+margin_right = -58.0
+margin_bottom = -71.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Prim" type="TextureButton" parent="dragworld/Greenroomback"]
+margin_left = -27.0
+margin_top = -79.0
+margin_right = -5.0
+margin_bottom = -54.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Purpleroomback" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 144 )
+texture = ExtResource( 8 )
+
+[node name="PurpleNotch1" type="TextureButton" parent="dragworld/Purpleroomback"]
+margin_left = -66.0
+margin_top = -29.0
+margin_right = -44.0
+margin_bottom = -11.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 34 )
+texture_hover = ExtResource( 34 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Purpleroomback"]
+position = Vector2( -100, -59 )
+frames = SubResource( 22 )
+frame = 19
+playing = true
+centered = false
+
+[node name="2192" type="TextureButton" parent="dragworld/Purpleroomback"]
+margin_left = -85.0
+margin_top = -48.0
+margin_right = -63.0
+margin_bottom = -23.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jack" type="TextureButton" parent="dragworld/Purpleroomback"]
+margin_left = -100.0
+margin_top = -59.0
+margin_right = -78.0
+margin_bottom = -34.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Orangeroomback2" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 59, 204 )
+texture = ExtResource( 14 )
+
+[node name="OrangeNotch2" type="TextureButton" parent="dragworld/Orangeroomback2"]
+margin_left = 14.0
+margin_top = -69.0
+margin_right = 36.0
+margin_bottom = -51.0
+texture_normal = ExtResource( 27 )
+texture_pressed = ExtResource( 31 )
+texture_hover = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Orangeroomback2"]
+position = Vector2( -10, -119 )
+frames = SubResource( 27 )
+frame = 2
+playing = true
+centered = false
+
+[node name="Lucerecia" type="TextureButton" parent="dragworld/Orangeroomback2"]
+margin_left = -17.0
+margin_top = -120.0
+margin_right = 5.0
+margin_bottom = -95.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fern" type="TextureButton" parent="dragworld/Orangeroomback2"]
+margin_left = 15.0
+margin_top = -100.0
+margin_right = 37.0
+margin_bottom = -75.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Greenroomback2" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 59, 204 )
+texture = ExtResource( 24 )
+
+[node name="GreenNotch2" type="TextureButton" parent="dragworld/Greenroomback2"]
+margin_left = -26.0
+margin_top = -49.0
+margin_right = -4.0
+margin_bottom = -31.0
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 33 )
+texture_hover = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Greenroomback2"]
+position = Vector2( -68, -88 )
+frames = SubResource( 28 )
+frame = 21
+playing = true
+centered = false
+
+[node name="053" type="TextureButton" parent="dragworld/Greenroomback2"]
+margin_left = -43.0
+margin_top = -85.0
+margin_right = -21.0
+margin_bottom = -60.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="682" type="TextureButton" parent="dragworld/Greenroomback2"]
+margin_left = -36.0
+margin_top = -66.0
+margin_right = -14.0
+margin_bottom = -41.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="999" type="TextureButton" parent="dragworld/Greenroomback2"]
+margin_left = -65.0
+margin_top = -74.0
+margin_right = -43.0
+margin_bottom = -49.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hall" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 144 )
+texture = ExtResource( 20 )
+
+[node name="PartyNotch" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -118.0
+margin_top = 31.0
+margin_right = -66.0
+margin_bottom = 63.0
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 36 )
+texture_hover = ExtResource( 36 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PurpleNotch" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -66.0
+margin_top = 11.0
+margin_right = -44.0
+margin_bottom = 29.0
+texture_normal = ExtResource( 28 )
+texture_pressed = ExtResource( 29 )
+texture_hover = ExtResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenNotch" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -26.0
+margin_top = -9.0
+margin_right = -4.0
+margin_bottom = 9.0
+texture_normal = ExtResource( 23 )
+texture_pressed = ExtResource( 32 )
+texture_hover = ExtResource( 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OrangeNotch" type="TextureButton" parent="dragworld/Hall"]
+margin_left = 14.0
+margin_top = -29.0
+margin_right = 36.0
+margin_bottom = -11.0
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 30 )
+texture_hover = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PurpleNotch2" type="TextureButton" parent="dragworld/Hall"]
+margin_left = 54.0
+margin_top = -49.0
+margin_right = 76.0
+margin_bottom = -31.0
+texture_normal = ExtResource( 28 )
+texture_pressed = ExtResource( 29 )
+texture_hover = ExtResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClosedDoor" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -143.0
+margin_top = -22.0
+margin_right = -124.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 39 )
+texture_hover = ExtResource( 39 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OrangeDoor2" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -103.0
+margin_top = -42.0
+margin_right = -84.0
+margin_bottom = 5.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 38 )
+texture_hover = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PurpleDoor" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -63.0
+margin_top = -62.0
+margin_right = -44.0
+margin_bottom = -15.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 39 )
+texture_hover = ExtResource( 39 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenDoor" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -23.0
+margin_top = -82.0
+margin_right = -4.0
+margin_bottom = -35.0
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OrangeDoor" type="TextureButton" parent="dragworld/Hall"]
+margin_left = 17.0
+margin_top = -102.0
+margin_right = 36.0
+margin_bottom = -55.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 38 )
+texture_hover = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Hall"]
+position = Vector2( -116, -81 )
+frames = SubResource( 17 )
+frame = 18
+playing = true
+centered = false
+
+[node name="134" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -80.0
+margin_top = -17.0
+margin_right = -58.0
+margin_bottom = 8.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="191" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -120.0
+margin_top = -19.0
+margin_right = -98.0
+margin_bottom = 6.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Janet" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -46.0
+margin_top = -57.0
+margin_right = -24.0
+margin_bottom = -32.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Toby" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -30.0
+margin_top = -57.0
+margin_right = -8.0
+margin_bottom = -32.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chloe" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -18.0
+margin_top = -68.0
+margin_right = 4.0
+margin_bottom = -43.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bold" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -2.0
+margin_top = -88.0
+margin_right = 20.0
+margin_bottom = -63.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6469" type="TextureButton" parent="dragworld/Hall"]
+margin_top = -71.0
+margin_right = 22.0
+margin_bottom = -46.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2118" type="TextureButton" parent="dragworld/Hall"]
+margin_left = -61.0
+margin_top = -17.0
+margin_right = -39.0
+margin_bottom = 8.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Purpleroomfront" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 150 )
+texture = ExtResource( 11 )
+
+[node name="PurpleDoorclosed" type="TextureButton" parent="dragworld/Purpleroomfront"]
+margin_left = 57.0
+margin_top = -82.0
+margin_right = 76.0
+margin_bottom = -34.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 42 )
+texture_hover = ExtResource( 42 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Purpleroomfront"]
+position = Vector2( 71, -63 )
+frames = SubResource( 23 )
+frame = 11
+playing = true
+centered = false
+
+[node name="D-Class" type="TextureButton" parent="dragworld/Purpleroomfront"]
+margin_left = 104.0
+margin_top = -55.0
+margin_right = 126.0
+margin_bottom = -30.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Orangeroomfront" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 150 )
+texture = ExtResource( 4 )
+
+[node name="OrangeRoomDoor" type="TextureButton" parent="dragworld/Orangeroomfront"]
+margin_left = 17.0
+margin_top = -61.0
+margin_right = 36.0
+margin_bottom = -16.0
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 45 )
+texture_hover = ExtResource( 45 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Orangeroomfront"]
+position = Vector2( 22, -35 )
+frames = SubResource( 24 )
+frame = 7
+playing = true
+centered = false
+
+[node name="Irizu" type="TextureButton" parent="dragworld/Orangeroomfront"]
+margin_left = 30.0
+margin_top = -35.0
+margin_right = 52.0
+margin_bottom = -10.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ariel" type="TextureButton" parent="dragworld/Orangeroomfront"]
+margin_left = 52.0
+margin_top = -28.0
+margin_right = 74.0
+margin_bottom = -3.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Greenroomfront" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 150 )
+texture = ExtResource( 16 )
+
+[node name="Greendoorroom" type="TextureButton" parent="dragworld/Greenroomfront"]
+margin_left = -23.0
+margin_top = -42.0
+margin_right = -4.0
+margin_bottom = 4.0
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 44 )
+texture_hover = ExtResource( 44 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="dragworld/Greenroomfront"]
+position = Vector2( -29, -33 )
+frames = SubResource( 25 )
+frame = 6
+playing = true
+centered = false
+
+[node name="Asteria" type="TextureButton" parent="dragworld/Greenroomfront"]
+margin_left = -7.0
+margin_top = -37.0
+margin_right = 15.0
+margin_bottom = -12.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cerise" type="TextureButton" parent="dragworld/Greenroomfront"]
+margin_left = -31.0
+margin_top = -25.0
+margin_right = -9.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sherm" type="TextureButton" parent="dragworld/Greenroomfront"]
+margin_left = 11.0
+margin_top = -27.0
+margin_right = 33.0
+margin_bottom = -2.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Purpleroomfront2" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 59, 210 )
+texture = ExtResource( 11 )
+
+[node name="PurpleDoorOpen" type="TextureButton" parent="dragworld/Purpleroomfront2"]
+margin_left = 57.0
+margin_top = -82.0
+margin_right = 76.0
+margin_bottom = -35.0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 43 )
+texture_hover = ExtResource( 43 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Purpleroomfront2"]
+position = Vector2( 58, -75 )
+frames = SubResource( 26 )
+frame = 14
+playing = true
+centered = false
+
+[node name="BasarHighlight" type="TextureButton" parent="dragworld/Purpleroomfront2"]
+margin_left = 58.0
+margin_top = -75.0
+margin_right = 80.0
+margin_bottom = -50.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SnapHighlight" type="TextureButton" parent="dragworld/Purpleroomfront2"]
+margin_left = 89.0
+margin_top = -66.0
+margin_right = 111.0
+margin_bottom = -41.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Blacklight" type="Sprite" parent="dragworld"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 179, 144 )
+texture = ExtResource( 2 )
+
+[node name="BlacklightNotch" type="TextureButton" parent="dragworld/Blacklight"]
+margin_left = 116.0
+margin_top = 45.0
+margin_right = 138.0
+margin_bottom = 63.0
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 40 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Blacklight"]
+position = Vector2( 98, -37 )
+frames = SubResource( 18 )
+frame = 24
+playing = true
+centered = false
+
+[node name="IevaHighlight" type="TextureButton" parent="dragworld/Blacklight"]
+margin_left = 126.0
+margin_top = -38.0
+margin_right = 148.0
+margin_bottom = -13.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HalKost" type="TextureButton" parent="dragworld/Blacklight"]
+margin_left = 98.0
+margin_top = 2.0
+margin_right = 120.0
+margin_bottom = 27.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KuobachHighlight" type="TextureButton" parent="dragworld/Blacklight"]
+margin_left = 152.0
+margin_top = 14.0
+margin_right = 174.0
+margin_bottom = 39.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Desmarais Highlight" type="TextureButton" parent="dragworld/Blacklight"]
+margin_left = 127.0
+margin_top = 19.0
+margin_right = 149.0
+margin_bottom = 44.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Partyback" type="Sprite" parent="dragworld"]
+position = Vector2( 179, 144 )
+texture = ExtResource( 10 )
+
+[node name="Party" type="Sprite" parent="dragworld"]
+position = Vector2( 179, 144 )
+texture = ExtResource( 5 )
+
+[node name="Door" type="TextureButton" parent="dragworld/Party"]
+margin_left = 116.0
+margin_top = 12.0
+margin_right = 135.0
+margin_bottom = 57.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 35 )
+texture_hover = ExtResource( 35 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HallNotch" type="TextureButton" parent="dragworld/Party"]
+margin_left = -118.0
+margin_top = 31.0
+margin_right = -66.0
+margin_bottom = 63.0
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 36 )
+texture_hover = ExtResource( 36 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="dragworld/Party"]
+position = Vector2( -81, -15 )
+frames = SubResource( 19 )
+frame = 10
+playing = true
+centered = false
+
+[node name="WisteriaHighlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 91.0
+margin_top = 56.0
+margin_right = 113.0
+margin_bottom = 81.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MeriHighlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 168.0
+margin_top = 26.0
+margin_right = 190.0
+margin_bottom = 51.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AbigailHighlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 152.0
+margin_top = -4.0
+margin_right = 174.0
+margin_bottom = 21.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KiteHighlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 127.0
+margin_top = 88.0
+margin_right = 149.0
+margin_bottom = 113.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2017Highlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 174.0
+margin_top = 62.0
+margin_right = 196.0
+margin_bottom = 87.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6080Highlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 153.0
+margin_top = 63.0
+margin_right = 175.0
+margin_bottom = 88.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3663Highlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 63.0
+margin_top = 103.0
+margin_right = 85.0
+margin_bottom = 128.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2241Highlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 73.0
+margin_top = 104.0
+margin_right = 95.0
+margin_bottom = 129.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PheobeHighlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = 12.0
+margin_top = 52.0
+margin_right = 34.0
+margin_bottom = 77.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1003Highlight" type="TextureButton" parent="dragworld/Party/AnimatedSprite"]
+margin_left = -6.0
+margin_top = 59.0
+margin_right = 16.0
+margin_bottom = 84.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AlexThorley" type="AnimatedSprite" parent="dragworld"]
+position = Vector2( 370, 253 )
+frames = SubResource( 16 )
+frame = 7
+playing = true
+centered = false
+
+[node name="AlexHighlight" type="TextureButton" parent="dragworld/AlexThorley"]
+margin_left = -3.0
+margin_top = -4.0
+margin_right = 19.0
+margin_bottom = 21.0
+texture_pressed = ExtResource( 71 )
+texture_hover = ExtResource( 71 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dragworld"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 2 )
+anims/blacklightload = SubResource( 3 )
+anims/hallload = SubResource( 5 )
+anims/loadin = SubResource( 29 )
+anims/partyload = SubResource( 6 )
+anims/room1load = SubResource( 7 )
+anims/room2load = SubResource( 8 )
+anims/room3load = SubResource( 9 )
+anims/room4load = SubResource( 10 )
+anims/room5load = SubResource( 11 )
+anims/room6load = SubResource( 12 )
+anims/room7load = SubResource( 13 )
+anims/room8load = SubResource( 14 )
+anims/room9load = SubResource( 15 )
+
+[node name="draggablecamera" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+limit_left = -180
+limit_top = -125
+limit_right = 240
+limit_bottom = 160
+script = ExtResource( 46 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+visible = false
+margin_right = 161.0
+margin_bottom = 145.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ColorRect"]
+margin_left = 33.0
+margin_top = 47.0
+margin_right = 128.0
+margin_bottom = 98.0
+custom_fonts/normal_font = SubResource( 30 )
+bbcode_enabled = true
+bbcode_text = "[center][color=#D85E19]HAPPY[/color]
+[color=#581AB0]HALLOWEEN[/color]
+[color=#D85E19]2022[/color][/center]"
+text = "HAPPY
+HALLOWEEN
+2022"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dialogue" parent="CanvasLayer" instance=ExtResource( 72 )]
+visible = false
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
+modulate = Color( 1, 1, 1, 0.435294 )
+frames = SubResource( 31 )
+frame = 1
+playing = true
+centered = false
+
+[connection signal="input_event" from="dragworld" to="dragworld" method="_on_dragworld_input_event"]
+[connection signal="pressed" from="dragworld/Orangeroomback/OrangeNotch1" to="dragworld" method="_on_OrangeNotch1_pressed"]
+[connection signal="pressed" from="dragworld/Orangeroomback/Umen" to="." method="_on_Umen_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomback/GreenNotch1" to="dragworld" method="_on_GreenNotch1_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomback/Ines" to="." method="_on_Ines_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomback/Prim" to="." method="_on_Prim_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomback/PurpleNotch1" to="dragworld" method="_on_PurpleNotch1_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomback/2192" to="." method="_on_2192_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomback/Jack" to="." method="_on_Jack_pressed"]
+[connection signal="pressed" from="dragworld/Orangeroomback2/OrangeNotch2" to="dragworld" method="_on_OrangeNotch2_pressed"]
+[connection signal="pressed" from="dragworld/Orangeroomback2/Lucerecia" to="." method="_on_Lucerecia_pressed"]
+[connection signal="pressed" from="dragworld/Orangeroomback2/Fern" to="." method="_on_Fern_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomback2/GreenNotch2" to="dragworld" method="_on_GreenNotch2_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomback2/053" to="." method="_on_053_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomback2/682" to="." method="_on_682_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomback2/999" to="." method="_on_999_pressed"]
+[connection signal="pressed" from="dragworld/Hall/PartyNotch" to="dragworld" method="_on_PartyNotch_pressed"]
+[connection signal="pressed" from="dragworld/Hall/PurpleNotch" to="dragworld" method="_on_PurpleNotch_pressed"]
+[connection signal="pressed" from="dragworld/Hall/GreenNotch" to="dragworld" method="_on_GreenNotch_pressed"]
+[connection signal="pressed" from="dragworld/Hall/OrangeNotch" to="dragworld" method="_on_OrangeNotch_pressed"]
+[connection signal="pressed" from="dragworld/Hall/PurpleNotch2" to="dragworld" method="_on_PurpleNotch2_pressed"]
+[connection signal="pressed" from="dragworld/Hall/ClosedDoor" to="dragworld" method="_on_ClosedDoor_pressed"]
+[connection signal="pressed" from="dragworld/Hall/OrangeDoor2" to="dragworld" method="_on_OrangeDoor2_pressed"]
+[connection signal="pressed" from="dragworld/Hall/PurpleDoor" to="dragworld" method="_on_PurpleDoor_pressed"]
+[connection signal="pressed" from="dragworld/Hall/GreenDoor" to="dragworld" method="_on_GreenDoor_pressed"]
+[connection signal="pressed" from="dragworld/Hall/OrangeDoor" to="dragworld" method="_on_OrangeDoor_pressed"]
+[connection signal="pressed" from="dragworld/Hall/134" to="." method="_on_134_pressed"]
+[connection signal="pressed" from="dragworld/Hall/191" to="." method="_on_191_pressed"]
+[connection signal="pressed" from="dragworld/Hall/Janet" to="." method="_on_Janet_pressed"]
+[connection signal="pressed" from="dragworld/Hall/Toby" to="." method="_on_Toby_pressed"]
+[connection signal="pressed" from="dragworld/Hall/Chloe" to="." method="_on_Chloe_pressed"]
+[connection signal="pressed" from="dragworld/Hall/Bold" to="." method="_on_Bold_pressed"]
+[connection signal="pressed" from="dragworld/Hall/6469" to="." method="_on_6469_pressed"]
+[connection signal="pressed" from="dragworld/Hall/2118" to="." method="_on_2118_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomfront/PurpleDoorclosed" to="dragworld" method="_on_PurpleDoorclosed_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomfront/D-Class" to="." method="_on_DClass_pressed"]
+[connection signal="pressed" from="dragworld/Orangeroomfront/OrangeRoomDoor" to="dragworld" method="_on_OrangeRoomDoor_pressed"]
+[connection signal="pressed" from="dragworld/Orangeroomfront/Irizu" to="." method="_on_Irizu_pressed"]
+[connection signal="pressed" from="dragworld/Orangeroomfront/Ariel" to="." method="_on_Ariel_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomfront/Greendoorroom" to="dragworld" method="_on_Greendoorroom_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomfront/Asteria" to="." method="_on_Asteria_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomfront/Cerise" to="." method="_on_Cerise_pressed"]
+[connection signal="pressed" from="dragworld/Greenroomfront/Sherm" to="." method="_on_Sherm_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomfront2/PurpleDoorOpen" to="dragworld" method="_on_PurpleDoorOpen_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomfront2/BasarHighlight" to="." method="_on_BasarHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Purpleroomfront2/SnapHighlight" to="." method="_on_SnapHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Blacklight/BlacklightNotch" to="dragworld" method="_on_BlacklightNotch_pressed"]
+[connection signal="pressed" from="dragworld/Blacklight/IevaHighlight" to="." method="_on_IevaHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Blacklight/HalKost" to="." method="_on_HalKost_pressed"]
+[connection signal="pressed" from="dragworld/Blacklight/KuobachHighlight" to="." method="_on_KuobachHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Blacklight/Desmarais Highlight" to="." method="_on_Desmarais_Highlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/Door" to="dragworld" method="_on_Door_pressed"]
+[connection signal="pressed" from="dragworld/Party/HallNotch" to="dragworld" method="_on_HallNotch_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/WisteriaHighlight" to="." method="_on_WisteriaHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/MeriHighlight" to="." method="_on_MeriHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/AbigailHighlight" to="." method="_on_AbigailHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/KiteHighlight" to="." method="_on_KiteHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/2017Highlight" to="." method="_on_2017Highlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/6080Highlight" to="." method="_on_6080Highlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/3663Highlight" to="." method="_on_3663Highlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/2241Highlight" to="." method="_on_2241Highlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/PheobeHighlight" to="." method="_on_PheobeHighlight_pressed"]
+[connection signal="pressed" from="dragworld/Party/AnimatedSprite/1003Highlight" to="." method="_on_1003Highlight_pressed"]
+[connection signal="pressed" from="dragworld/AlexThorley/AlexHighlight" to="." method="_on_AlexHighlight_pressed"]

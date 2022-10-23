@@ -1,0 +1,120 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://DanimalsCondense.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://viewbuttonpress.png" type="Texture" id=3]
+[ext_resource path="res://viewbutton.png" type="Texture" id=4]
+[ext_resource path="res://Anims/overlay_001.png" type="Texture" id=5]
+[ext_resource path="res://Anims/overlay_002.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes" type="TextureButton" parent="."]
+margin_left = 47.0
+margin_top = 78.0
+margin_right = 115.0
+margin_bottom = 95.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes2" type="TextureButton" parent="."]
+visible = false
+margin_left = 48.0
+margin_top = 107.0
+margin_right = 116.0
+margin_bottom = 124.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yes3" type="TextureButton" parent="."]
+visible = false
+margin_left = 46.0
+margin_top = 93.0
+margin_right = 114.0
+margin_bottom = 110.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 25.0
+margin_top = 34.0
+margin_right = 136.0
+margin_bottom = 66.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]View Data File
+19.2022.10.31?[/center]"
+text = "View Data File
+19.2022.10.31?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 10.0
+margin_top = 5.0
+margin_right = 154.0
+margin_bottom = 106.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Drag to move camera.
+Click Doors and notches to move between rooms. Click Characters for information and a link to source. [/center]"
+text = "Drag to move camera.
+Click Doors and notches to move between rooms. Click Characters for information and a link to source. "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 12.0
+margin_top = 27.0
+margin_right = 152.0
+margin_bottom = 91.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]This interactable, like all other SCP Foundation content, is liscenced under CC-BY-SA 3.0[/center]"
+text = "This interactable, like all other SCP Foundation content, is liscenced under CC-BY-SA 3.0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0.435294 )
+frames = SubResource( 2 )
+playing = true
+centered = false
+
+[connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="Yes2" to="." method="_on_Yes2_pressed"]
+[connection signal="pressed" from="Yes3" to="." method="_on_Yes3_pressed"]
