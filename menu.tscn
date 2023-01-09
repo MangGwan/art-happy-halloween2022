@@ -1,13 +1,15 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Code/Control.gd" type="Script" id=1]
-[ext_resource path="res://DanimalsCondense.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://StaticArt/viewbuttonpress.png" type="Texture" id=3]
-[ext_resource path="res://StaticArt/viewbutton.png" type="Texture" id=4]
+[ext_resource path="res://Silver.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Anims/overlay_001.png" type="Texture" id=5]
 [ext_resource path="res://Anims/overlay_002.png" type="Texture" id=6]
+[ext_resource path="res://StaticArt/viewbuttonpress-zhtr.PNG" type="Texture" id=7]
+[ext_resource path="res://StaticArt/viewbutton-zhtr.PNG" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
+size = 19
+extra_spacing_bottom = -3
 font_data = ExtResource( 2 )
 
 [sub_resource type="SpriteFrames" id=2]
@@ -22,34 +24,25 @@ animations = [ {
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Yes" type="TextureButton" parent="."]
 margin_left = 47.0
 margin_top = 78.0
 margin_right = 115.0
 margin_bottom = 95.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 3 )
-texture_hover = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
 
 [node name="Yes2" type="TextureButton" parent="."]
 visible = false
 margin_left = 48.0
-margin_top = 107.0
+margin_top = 100.0
 margin_right = 116.0
-margin_bottom = 124.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 3 )
-texture_hover = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_bottom = 117.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
 
 [node name="Yes3" type="TextureButton" parent="."]
 visible = false
@@ -57,9 +50,9 @@ margin_left = 46.0
 margin_top = 93.0
 margin_right = 114.0
 margin_bottom = 110.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 3 )
-texture_hover = ExtResource( 4 )
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -68,46 +61,39 @@ __meta__ = {
 margin_left = 25.0
 margin_top = 34.0
 margin_right = 136.0
-margin_bottom = 66.0
+margin_bottom = 68.0
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-bbcode_text = "[center]View Data File
-19.2022.10.31?[/center]"
-text = "View Data File
-19.2022.10.31?"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+bbcode_text = "[center]檢視資料
+19.2022.10.31？[/center]"
+text = "檢視資料
+19.2022.10.31？"
+scroll_active = false
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 visible = false
 margin_left = 10.0
-margin_top = 5.0
+margin_top = 19.0
 margin_right = 154.0
-margin_bottom = 106.0
+margin_bottom = 96.0
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-bbcode_text = "[center]Drag to move camera.
-Click Doors and notches to move between rooms. Click Characters for information and a link to source. [/center]"
-text = "Drag to move camera.
-Click Doors and notches to move between rooms. Click Characters for information and a link to source. "
-__meta__ = {
-"_edit_use_anchors_": false
-}
+bbcode_text = "[center]拖曳畫面來移動鏡頭。
+點擊門口或缺口來在房間之間移動。點擊角色來查看更多及來源連結。[/center]"
+text = "拖曳畫面來移動鏡頭。
+點擊門口或缺口來在房間之間移動。點擊角色來查看更多及來源連結。"
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
 visible = false
 margin_left = 12.0
-margin_top = 27.0
+margin_top = 14.0
 margin_right = 152.0
-margin_bottom = 91.0
+margin_bottom = 86.0
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-bbcode_text = "[center]This interactable, like all other SCP Foundation content, is liscenced under CC-BY-SA 3.0[/center]"
-text = "This interactable, like all other SCP Foundation content, is liscenced under CC-BY-SA 3.0"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+bbcode_text = "[center]和其他 SCP 基金會內容一樣，此互動檔案 （除了字體部分外） 以 CC-BY-SA 3.0 授權[/center]"
+text = "和其他 SCP 基金會內容一樣，此互動檔案 （除了字體部分外） 以 CC-BY-SA 3.0 授權"
+scroll_active = false
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 1, 1, 0.435294 )
